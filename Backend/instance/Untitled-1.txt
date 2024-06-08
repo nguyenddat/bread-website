@@ -1,0 +1,30 @@
+-- database: d:\Code kì 2\bai tap cuoi ki\Backend\instance\bread.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+INSERT INTO product (id, name, img, price, like) VALUES 
+    (
+        '1', 'Oval Rattan Proofing Basket', './img/product 6.jpg', '$16.00', 30
+    ),
+    (
+        '2', 'High Protein Bread Flour', './img/product 3.jpg', '$7.50 - $81.50', 33
+    ),
+    (
+        '3', 'Sourdough Starter (Live)', './img/product 5.jpg', '$9.00', 20
+    ),
+    (
+        '4', 'Einkorn Whole Grain Flour', './img/product 1.jpg', '$11.45 - $98.70', 40
+    ),
+    (
+        '5', 'Breadtopia Sourdough Starter Kit', './img/product 2.jpg', '$25.00', 10
+    ),
+    (
+        '6', 'Breadtopia Hearth Baker', './img/product 8.jpg', '$87.00', 27
+    ),
+    (
+        '7', 'Breadtopia Banneton — Round', './img/product 7.jpg', '$19.00', 37
+    ),
+    (
+        '8', 'Mockmill Lino 100 Grain Mill', './img/product 4.jpg', '$613.00', 8
+    )
+
