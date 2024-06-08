@@ -48,6 +48,19 @@ function displayProducts(products) {
         const wishlistIcon = document.createElement('i')
         wishlistIcon.classList.add('far')
         wishlistIcon.classList.add("fa-heart")
+        wishlistIcon.onclick = () => {
+            if (wishlistIcon.classList.contains('far')) {
+                wishlistIcon.classList.remove('far')
+                wishlistIcon.classList.add('fas')
+                wishlistIcon.style.color = '#fcb900';
+                wishlistIcon.style.transition = 'color 0.3s ease'
+            } else {
+                wishlistIcon.classList.remove('fas')
+                wishlistIcon.classList.add('far')
+                wishlistIcon.style.color = `#282828`
+                wishlistIcon.style.transition = 'color 0.3s ease'
+            }
+        }
         
         nameAndwishlistIcon.appendChild(productName)
         nameAndwishlistIcon.appendChild(wishlistIcon)

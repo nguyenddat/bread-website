@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
 DB_NAME = 'bread.db'
@@ -13,6 +13,10 @@ db.init_app(app)
 from .model import product
 with app.app_context():
     db.create_all()
+
+@app.route('/')
+def default():
+    return render_template('trang chủ.html')
 
 @app.route('/api/get-most-liked-products', methods=['GET'])
 @cross_origin()
