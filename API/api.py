@@ -16,7 +16,7 @@ with app.app_context():
 
 @app.route('/')
 def default():
-    return render_template('trang chủ.html')
+    return render_template('home.html')
 
 @app.route('/api/get-most-liked-products', methods=['GET'])
 @cross_origin()
