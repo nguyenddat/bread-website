@@ -2,7 +2,7 @@ import sqlite3
 from flask import jsonify
 
 def get_most_liked_products():
-    conn = sqlite3.connect('Backend\\instance\\bread.db')
+    conn = sqlite3.connect('D:\\Code kì 2\\bai tap cuoi ki\\instance\\bread.db')
     cursor = conn.cursor()
 
     cursor.execute('select * from product order by like desc')

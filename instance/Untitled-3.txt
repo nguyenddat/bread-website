@@ -1,0 +1,13 @@
+-- database: d:\Code kì 2\bai tap cuoi ki\instance\bread.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+INSERT INTO bread_recipes (id, img, title, description) VALUES
+('1', '../static/img/recipe 1.jpg' ,'No Knead Sourdough Bread', 'Our original contribution to the no-knead bread revolution: substitute live sourdough starter for instant yeast to create the ultimate no knead artisan bread loaf.'),
+('2', '../static/img/recipe 2.jpg' ,'Artisan Sourdough Rye Bread', 'This is my favorite rye bread recipe of all time. I could have just as easily called it Swedish Rye Bread or Aroma Therapy Bread for that matter (takes the coveted baking bread smell to another level). And if you’re not into sourdough baking, no problem, I cover the instant yeast version as well.'),
+('3', '../static/img/recipe 3.jpg' ,'How to Make Baguettes', 'The Breadtopia baguette recipe and video tutorial for almost no-knead baguettes. Easier than you thought, as delicious as you hoped.'),
+('4', '../static/img/recipe 4.jpg' ,'How To Make Bagels', 'Welcome to Bageltopia; the Breadtopia bagel recipe and video tutorial for making genuine Vermont sourdough bagels (i.e. the best bagels in the world).'),
+('5', '../static/img/recipe 5.jpg' ,'Seeded Sourdough Bread', 'With chia, poppy, and toasted sesame seeds, this bread smells delicious and is full of flavor. The crust is crackly and the crumb is soft and chewy.'),
+('6', '../static/img/recipe 6.jpg' ,'Sourdough Ciabatta', 'If you could only have one type of bread to eat for the rest of your life, what would you pick? My answer would be, “Ciabatta.” Specifically, sourdough ciabatta, for the added complexity of flavor that natural leavening brings to the bread.'),
+('7', '../static/img/recipe 7.jpg' ,'Sourdough Focaccia (Yeast Version too)', 'Sourdough Focaccia with a touch of whole grain wheat is a delicious treat but also a contender to be an everyday bread.'),
+('8', '../static/img/recipe 8.jpg' ,'Basic All Purpose Sourdough Bread', 'You can make this basic all purpose flour sourdough bread recipe into beautiful crusty artisan-style bread or a soft and tender sandwich bread. You can choose either a 1-day process baking in the evening or an overnight refrigeration of the dough for a morning bake. It’s simple, easy to follow, and the results are delicious.')

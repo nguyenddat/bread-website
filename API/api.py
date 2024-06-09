@@ -23,3 +23,8 @@ def default():
 def get_most_liked_products():
     from .get_most_liked_product import get_most_liked_products
     return get_most_liked_products()
+
+@app.route('/api/get_random_bread_recipes', methods=['GET'])
+def get_random_bread_recipes():
+    from .get_random_bread_recipes import get_random_recipes
+    return get_random_recipes()

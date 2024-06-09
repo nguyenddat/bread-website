@@ -76,5 +76,47 @@ function displayProducts(products) {
         container.append(productBox)
     }
 }
+
+async function fetchRecipes() {
+    try {
+        const response = await fetch('http://127.0.0.1:1010/api/get_random_bread_recipes')
+        if (!response.ok) {
+            throw new Error(`HTTP ERROR! status: ${response.status}`)
+        }
+        const recipes = await response.json();
+        console.log(recipes)
+        displayRecipes(recipes)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+function displayRecipes(recipes) {
+    const recipesContainer = document.getElementById('recipes-container')
+    recipesContainer.textContent = ''
+
+    for (let recipe in recipes) {
+        const recipeBox = document.createElement('div')
+        recipeBox.classList.add('recipe-box')
+
+        const recipeImg = document.createElement('img')
+        recipeImg.src =  recipes[recipe][0]
+        recipe.alt = recipe
+
+        const recipeTitle = document.createElement('h3')
+        recipeTitle.textContent = recipe
+
+        const recipeDescription = document.createElement('p')
+        recipeDescription.textContent = recipes[recipe][1]
+
+        recipeBox.appendChild(recipeImg)
+        recipeBox.appendChild(recipeTitle)
+        recipeBox.appendChild(recipeDescription)
+
+        recipesContainer.appendChild(recipeBox)
+        
+    }
+}
 window.onload = fetchData();
+window.onload = fetchRecipes()
 
